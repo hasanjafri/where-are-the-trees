@@ -13,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - Background
   - Ground
   - Climbing
   - Player
+  - Background
   - Enemy
   - Obstacles
   - Interactables

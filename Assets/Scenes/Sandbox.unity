@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 299281299}
   - component: {fileID: 299281298}
   - component: {fileID: 299281300}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3927,8 +3927,8 @@ MonoBehaviour:
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.125
-  m_DeadZoneHeight: 0.1
+  m_DeadZoneWidth: 0.1
+  m_DeadZoneHeight: 0.14
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8
@@ -4200,8 +4200,8 @@ MonoBehaviour:
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.125
-  m_DeadZoneHeight: 0.1
+  m_DeadZoneWidth: 0.1
+  m_DeadZoneHeight: 0.14
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8
@@ -4243,7 +4243,7 @@ GameObject:
   - component: {fileID: 1095792754}
   - component: {fileID: 1095792753}
   - component: {fileID: 1095792752}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4313,6 +4313,24 @@ Tilemap:
   m_GameObject: {fileID: 1095792748}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: -6, y: -4, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: -5, y: -4, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: -4, y: -4, z: 0}
     second:
       m_TileIndex: 0
@@ -4332,6 +4350,42 @@ Tilemap:
       m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: -2, y: -4, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: -1, y: -4, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 0, y: -4, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 1, y: -4, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 2, y: -4, z: 0}
     second:
       m_TileIndex: 0
       m_TileSpriteIndex: 0
@@ -4412,6 +4466,24 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 2, y: -3, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: -6, y: -2, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: -5, y: -2, z: 0}
     second:
       m_TileIndex: 0
@@ -4484,6 +4556,15 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 1, y: -1, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 2, y: -1, z: 0}
     second:
       m_TileIndex: 0
@@ -4531,13 +4612,13 @@ Tilemap:
       m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 24
+  - m_RefCount: 33
     m_Data: {fileID: 11400000, guid: 8d5370393f9c0401a8f0ccc700418245, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 24
+  - m_RefCount: 33
     m_Data: {fileID: 21300006, guid: 69b264a36be054771bee535526c1456c, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 24
+  - m_RefCount: 33
     m_Data:
       e00: 1
       e01: 0
@@ -4556,7 +4637,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 24
+  - m_RefCount: 33
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4600,20 +4681,8 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 1095792754}
     m_ColliderPaths:
-    - - X: -9531250
+    - - X: 30468750
         Y: -40000000
-      - X: -9531250
-        Y: -30468750
-      - X: 20000000
-        Y: -30468750
-      - X: 20468750
-        Y: -30000000
-      - X: 20468750
-        Y: -20468750
-      - X: 30000000
-        Y: -20468750
-      - X: 30468750
-        Y: -20000000
       - X: 30468750
         Y: 20000000
       - X: 30000000
@@ -4623,28 +4692,22 @@ CompositeCollider2D:
       - X: 19531250
         Y: 20000000
       - X: 19531250
+        Y: 468750
+      - X: 10000000
+        Y: 468750
+      - X: 9531250
+        Y: 0
+      - X: 9531250
         Y: -9531250
-      - X: -50000000
+      - X: -60000000
         Y: -9531250
-      - X: -50468752
+      - X: -60468752
         Y: -10000000
-      - X: -50468752
-        Y: -19531250
-      - X: -60000000
-        Y: -19531250
       - X: -60468752
-        Y: -20000000
-      - X: -60468752
-        Y: -30000000
-      - X: -60000000
-        Y: -30468750
-      - X: -40468752
-        Y: -30468750
-      - X: -40468752
         Y: -40000000
-      - X: -40000000
+      - X: -60000000
         Y: -40468752
-      - X: -10000000
+      - X: 30000000
         Y: -40468752
     - - X: 468750
         Y: 0
@@ -4676,29 +4739,20 @@ CompositeCollider2D:
         Y: -468750
   m_CompositePaths:
     m_Paths:
-    - - {x: -0.953125, y: -4}
-      - {x: -0.953125, y: -3.046875}
-      - {x: 2, y: -3.046875}
-      - {x: 2.046875, y: -3}
-      - {x: 2.046875, y: -2.046875}
-      - {x: 3, y: -2.046875}
-      - {x: 3.046875, y: -2}
+    - - {x: 3.046875, y: -4}
       - {x: 3.046875, y: 2}
       - {x: 3, y: 2.046875}
       - {x: 2, y: 2.046875}
       - {x: 1.953125, y: 2}
-      - {x: 1.953125, y: -0.953125}
-      - {x: -5, y: -0.953125}
-      - {x: -5.0468755, y: -1}
-      - {x: -5.0468755, y: -1.953125}
-      - {x: -6, y: -1.953125}
-      - {x: -6.0468755, y: -2}
-      - {x: -6.0468755, y: -3}
-      - {x: -6, y: -3.046875}
-      - {x: -4.0468755, y: -3.046875}
-      - {x: -4.0468755, y: -4}
-      - {x: -4, y: -4.0468755}
-      - {x: -1, y: -4.0468755}
+      - {x: 1.953125, y: 0.046875}
+      - {x: 1, y: 0.046875}
+      - {x: 0.953125, y: 0}
+      - {x: 0.953125, y: -0.953125}
+      - {x: -6, y: -0.953125}
+      - {x: -6.0468755, y: -1}
+      - {x: -6.0468755, y: -4}
+      - {x: -6, y: -4.0468755}
+      - {x: 3, y: -4.0468755}
     - - {x: 0.046875, y: 0}
       - {x: 0.046875, y: 0.953125}
       - {x: 1, y: 0.953125}
@@ -4919,8 +4973,8 @@ MonoBehaviour:
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.125
-  m_DeadZoneHeight: 0.1
+  m_DeadZoneWidth: 0.1
+  m_DeadZoneHeight: 0.14
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8
@@ -5041,7 +5095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1660271065}
   - component: {fileID: 1660271066}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: GameSession
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5122,7 +5176,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 1741356395}
   m_AnimatedTarget: {fileID: 1741356400}
   m_LayerIndex: 0
   m_ShowDebugText: 0
@@ -5259,7 +5313,7 @@ GameObject:
   - component: {fileID: 1741356398}
   - component: {fileID: 1741356397}
   - component: {fileID: 1741356396}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5376,8 +5430,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 5
-  jumpSpeed: 5
-  climbSpeed: 5
+  jumpSpeed: 25
+  climbSpeed: 3
   deathKick: {x: 25, y: 25}
 --- !u!50 &1741356399
 Rigidbody2D:
@@ -5430,7 +5484,7 @@ GameObject:
   - component: {fileID: 1884372164}
   - component: {fileID: 1884372163}
   - component: {fileID: 1884372162}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Climbing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
