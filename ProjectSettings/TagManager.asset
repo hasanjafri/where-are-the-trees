@@ -20,7 +20,7 @@ TagManager:
   - Enemy
   - Obstacles
   - Interactables
-  - 
+  - BGElements
   - 
   - 
   - 
@@ -44,7 +44,7 @@ TagManager:
   - name: Background
     uniqueID: 3778630341
     locked: 0
-  - name: Back 2x
+  - name: BGElements
     uniqueID: 480840823
     locked: 0
   - name: Climbing
