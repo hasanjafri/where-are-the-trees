@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
@@ -14,13 +15,16 @@ public class Player : MonoBehaviour
 
   // State
   bool isAlive = true;
+  bool isGrounded = true;
 
   // Cached references
   Rigidbody2D myRigidBody;
   Animator myAnimator;
   CapsuleCollider2D myBodyCollider;
   BoxCollider2D myFeetCollider;
+  SpriteRenderer mySpriteRenderer;
   float gravityScale;
+  
 
   // Use this for initialization
   void Start()
@@ -49,15 +53,15 @@ public class Player : MonoBehaviour
     }
   }
 
-  private void Run()
-  {
-    float controlThrow = CrossPlatformInputManager.GetAxis("Horizontal"); // value is between -1 to +1
-    Vector2 playerVelocity = new Vector2((controlThrow * runSpeed), myRigidBody.velocity.y);
-    myRigidBody.velocity = playerVelocity;
+    private void Run()
+      {
+        float controlThrow = CrossPlatformInputManager.GetAxis("Horizontal"); // value is between -1 to +1
+        Vector2 playerVelocity = new Vector2((controlThrow * runSpeed), myRigidBody.velocity.y);
+        myRigidBody.velocity = playerVelocity;
 
-    bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
-    myAnimator.SetBool("Running", playerHasHorizontalSpeed);
-  }
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
+        myAnimator.SetBool("Running", playerHasHorizontalSpeed);
+      }
 
   private void ClimbLadder()
   {
@@ -77,17 +81,41 @@ public class Player : MonoBehaviour
     myAnimator.SetBool("Climbing", playerHasVerticalSpeed);
   }
 
+  private void OnCollisionEnter2D(Collision2D collision)
+  {
+    if (collision.gameObject.tag == "Ground")
+    {
+      isGrounded = true;
+      myAnimator.SetBool("Jumping", false);
+    }
+  }
+
+  private void OnTriggerEnter2D(Collider2D collision)
+  {
+    if (collision.gameObject.tag == "Climbing")
+    {
+      myAnimator.SetBool("Jumping", false);
+    }
+  }
+
   private void Jump()
   {
+    if (myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+    {
+      return;
+    }
+
     if (!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
     {
       return;
     }
 
-    if (CrossPlatformInputManager.GetButtonDown("Jump"))
+    if (CrossPlatformInputManager.GetButtonDown("Jump") && isGrounded)
     {
       Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
       myRigidBody.velocity += jumpVelocity;
+      isGrounded = false;
+      myAnimator.SetBool("Jumping", true);
     }
   }
 

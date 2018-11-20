@@ -113,11 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!60 &299281300 stripped
-PolygonCollider2D:
-  m_PrefabParentObject: {fileID: 60055071939496648, guid: cb9e02038294b42d3806d9d70957cf20,
-    type: 2}
-  m_PrefabInternal: {fileID: 1791430933}
 --- !u!95 &494952717 stripped
 Animator:
   m_PrefabParentObject: {fileID: 95916413687824056, guid: 2b0089c0464e74546a8f5364bf772675,
@@ -251,21 +246,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114488584417445210, guid: 3b9d3441253f040f58ecd5634387aec1,
-        type: 2}
-      propertyPath: m_BoundingShape2D
-      value: 
-      objectReference: {fileID: 299281300}
-    - target: {fileID: 114462084256458602, guid: 3b9d3441253f040f58ecd5634387aec1,
-        type: 2}
-      propertyPath: m_BoundingShape2D
-      value: 
-      objectReference: {fileID: 299281300}
     - target: {fileID: 114164523820304976, guid: 3b9d3441253f040f58ecd5634387aec1,
         type: 2}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 299281300}
+      objectReference: {fileID: 1791430934}
+    - target: {fileID: 114462084256458602, guid: 3b9d3441253f040f58ecd5634387aec1,
+        type: 2}
+      propertyPath: m_BoundingShape2D
+      value: 
+      objectReference: {fileID: 1791430934}
+    - target: {fileID: 114488584417445210, guid: 3b9d3441253f040f58ecd5634387aec1,
+        type: 2}
+      propertyPath: m_BoundingShape2D
+      value: 
+      objectReference: {fileID: 1791430934}
     - target: {fileID: 114050569360383730, guid: 3b9d3441253f040f58ecd5634387aec1,
         type: 2}
       propertyPath: m_Follow
@@ -276,26 +271,6 @@ Prefab:
       propertyPath: m_AnimatedTarget
       value: 
       objectReference: {fileID: 494952717}
-    - target: {fileID: 4985939772323972, guid: 3b9d3441253f040f58ecd5634387aec1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -18.007446
-      objectReference: {fileID: 0}
-    - target: {fileID: 4277736652917156, guid: 3b9d3441253f040f58ecd5634387aec1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -13.439053
-      objectReference: {fileID: 0}
-    - target: {fileID: 4086294080276026, guid: 3b9d3441253f040f58ecd5634387aec1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -18.007446
-      objectReference: {fileID: 0}
-    - target: {fileID: 4167233816074466, guid: 3b9d3441253f040f58ecd5634387aec1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -18.007446
-      objectReference: {fileID: 0}
-    - target: {fileID: 4277736652917156, guid: 3b9d3441253f040f58ecd5634387aec1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.75984573
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b9d3441253f040f58ecd5634387aec1, type: 2}
   m_IsPrefabParent: 0
@@ -308,7 +283,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4721074158411104, guid: 2b0089c0464e74546a8f5364bf772675, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -16.95
+      value: -18.05
       objectReference: {fileID: 0}
     - target: {fileID: 4721074158411104, guid: 2b0089c0464e74546a8f5364bf772675, type: 2}
       propertyPath: m_LocalPosition.y
@@ -337,11 +312,6 @@ Prefab:
     - target: {fileID: 4721074158411104, guid: 2b0089c0464e74546a8f5364bf772675, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114394195145064546, guid: 2b0089c0464e74546a8f5364bf772675,
-        type: 2}
-      propertyPath: climbSpeed
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b0089c0464e74546a8f5364bf772675, type: 2}
@@ -400,10 +370,20 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 66983227277298278, guid: cb9e02038294b42d3806d9d70957cf20,
+        type: 2}
+      propertyPath: m_ColliderPaths.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 66281587610627124, guid: cb9e02038294b42d3806d9d70957cf20,
         type: 2}
       propertyPath: m_CompositePaths.m_Paths.Array.size
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 66983227277298278, guid: cb9e02038294b42d3806d9d70957cf20,
+        type: 2}
+      propertyPath: m_CompositePaths.m_Paths.Array.size
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 66281587610627124, guid: cb9e02038294b42d3806d9d70957cf20,
         type: 2}
@@ -1222,6 +1202,29 @@ Prefab:
       propertyPath: m_ChunkCullingBounds.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1906120811516748, guid: cb9e02038294b42d3806d9d70957cf20, type: 2}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 1611394569299174, guid: cb9e02038294b42d3806d9d70957cf20, type: 2}
+      propertyPath: m_TagString
+      value: Climbing
+      objectReference: {fileID: 0}
+    - target: {fileID: 2113883505960499542, guid: cb9e02038294b42d3806d9d70957cf20,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664157344916049864, guid: cb9e02038294b42d3806d9d70957cf20,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb9e02038294b42d3806d9d70957cf20, type: 2}
   m_IsPrefabParent: 0
+--- !u!60 &1791430934 stripped
+PolygonCollider2D:
+  m_PrefabParentObject: {fileID: 60398815475590808, guid: cb9e02038294b42d3806d9d70957cf20,
+    type: 2}
+  m_PrefabInternal: {fileID: 1791430933}
