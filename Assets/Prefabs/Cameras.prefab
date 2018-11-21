@@ -429,6 +429,8 @@ MonoBehaviour:
     m_ParentHash: 756556552
   - m_Hash: -1047031797
     m_ParentHash: 756556552
+  - m_Hash: -395774547
+    m_ParentHash: 756556552
 --- !u!114 &114064739792246474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -645,7 +647,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 6
+    OrthographicSize: 5
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -681,7 +683,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 6
+    OrthographicSize: 5
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0

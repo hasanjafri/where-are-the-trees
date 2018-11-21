@@ -71,6 +71,7 @@
     <Compile Include="Assets\Standard Assets\2d-extras-master\Assets\Tilemap\Tiles\Rule Tile\Scripts\Editor\RuleTileEditor.cs" />
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
     <Compile Include="Assets\Standard Assets\TextureAtlasSlicer\Editor\TextureAtlasSlicer.cs" />
+    <Compile Include="Assets\Standard Assets\Water2D Surface\scripts\Editor\MeshRendererEditor.cs" />
     <Reference Include="Cinemachine">
       <HintPath>C:/Users/Hasan/Documents/where-are-the-trees/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
